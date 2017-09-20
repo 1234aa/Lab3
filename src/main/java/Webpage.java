@@ -26,9 +26,13 @@ public class Webpage {
         System.out.println(urlToString("http://erdani.com/tdpl/hamlet.txt"));
         int index = -1;
         int count = 0;
-        String source ="http://erdani.com/tdpl/hamlet.txt";
-        while(source.indexOf(".", ++index) != -1)
-            count++;
+        String source ="http://erdani.com/tdpl/hamlet.txt ";
+        for(int i=0; i< source.length();i++)
+            {if (" ".equals(source.charAt(i))) {
+                count++;
+            }
+            // END OF IF
+            }//END OF FOR
         System.out.println(count);
-    }
-}
+    }// END OF MAIN
+}// END OF CLASS
